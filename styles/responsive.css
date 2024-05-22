@@ -1,0 +1,119 @@
+@media (min-width: 1400px) {
+    .container {
+        width: 1250px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .form-wrapper {
+        width: 50rem;
+    }
+    .contactus__map {
+        width: 40rem;
+    }
+    .form__textarea{
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav__logo{
+        font-size: 5rem;
+    }
+    .menu__item{
+        margin-right: 2rem;
+    }
+    .home__content-wrapper{
+        order: 0;
+    }
+    .home__content{
+        align-items: center;
+        text-align: center;
+    }
+    .home__btns{
+        justify-content: center;
+    }
+    .form-wrapper {
+        width: 45rem;
+    }
+    .contactus__map {
+        width: 20rem;
+    }
+    .form{
+        gap: 1rem;
+    }
+    .form__textarea{
+        height: 13rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        position: absolute;
+        top: 100%;
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        right: 0;
+        align-items: center;
+        background-color: var(--section-bg-color);
+        transition: all 200ms ease-in;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .menu--open {
+        height: 31rem;
+    }
+    .menu__item{
+        margin: 1rem;
+    }
+    .menu__item:last-child{
+        margin: 1rem;
+    }
+    .nav__toggle-icon{
+        display: flex;
+    }
+    .cover{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 15%);
+        transition: all 200ms ease-in;
+        z-index: -1;
+        opacity: 0;
+    }
+    
+    .cover--show {
+        z-index: 99;
+        opacity: 1;
+    }
+    .about-us__image{
+        margin-left: 0;
+    }
+    .service{
+        margin: 0 auto;
+    }
+    .footer .container{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-wrapper {
+        max-width: 90%;
+        margin: auto;
+    }
+    .contactus__map {
+        display: none;
+    }
+    .form{
+        gap: 1rem;
+    }
+    .form__textarea{
+        height: 13rem;
+    }
+}
